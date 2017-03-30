@@ -1,0 +1,61 @@
+.bd-footer{
+    width: 100%;
+    background-color: #092E59;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: auto;
+    color: #fff;
+}
+.cajaCurso{
+  background-color:#f6f8fa;
+  padding-bottom: .5em;
+  padding-top:.5em;
+  margin-bottom: 1em;
+}
+.cajaImagen{
+  text-align: center;
+}
+.chico{
+  width: 200px;
+  height: auto;
+}
+.resumen{
+  color:#05172E;
+  font-size: .8em;
+  font-weight: lighter;
+  width: 95%;
+}
+.clase{
+  font-weight: 300;
+  background-color:#3FCBD1;
+  font-size: 1.1em;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tituloClase{
+  color:#05172E;
+  font-size: 1.4em;
+  font-weight: lighter;
+  text-transform: capitalize;
+  margin-bottom: .5em;
+}
+.container-paciente{
+  margin-top: 2em;
+}
+.acceder{
+  border:1px solid #3FCBD1;
+  color:#3FCBD1;
+}
+.acceder:hover{
+  border:1px solid #3FCBD1;
+  background-color: #3FCBD1;
+  color:#fff;
+  font-weight: 200;
+}
+.tituloClase span{
+  font-size: .6em;
+  color:#FF615E;
+  font-weight: lighter;
+}

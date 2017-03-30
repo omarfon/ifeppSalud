@@ -1,3 +1,7 @@
 <p>
   nosotros works!
 </p>
+
+<ul>
+    <li *ngFor="let contacto of contactos | async">{{contacto.nombre}}</li>
+</ul>

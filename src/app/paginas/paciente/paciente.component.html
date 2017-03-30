@@ -1,3 +1,25 @@
-<p>
-  paciente works!
-</p>
+  <div class="container-paciente">
+    <div class="cajaCurso" *ngFor="let paciente of pacientes | async let i = index">
+      <div class="row">
+          <div class="col-sm-4 cajaImagen">
+            <div class="row">
+              <div class="col-sm-3 clase">
+                <p class="numero">clase: {{ paciente.id}}</p>
+              </div>
+              <div class="col-sm-9">
+                <img src="{{paciente.imagen}}" class="img-thumbnail chico" >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <h3 class="tituloClase">{{paciente.titulo}} | <span>{{ paciente.tema}}</span></h3>
+            <p class="resumen">
+              {{ paciente.contenido | slice:0:150}}
+            </p>
+            <button (click)="verHeroe(i)"
+            type="button" class="btn btn-outline-info right btn-sm acceder">acceder</button>
+            <!-- <a [routerLink]="['/pacientedetalle',i]" class="btn btn-outline-info">ver más...</a> -->
+          </div>
+      </div>
+    </div>
+  </div>
